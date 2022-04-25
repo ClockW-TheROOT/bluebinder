@@ -2,6 +2,7 @@
 
 CC ?= $(CROSS_COMPILE)gcc
 USE_SYSTEMD ?= 0
+BIN = /usr/sbin
 
 DEPEND_LIBS = libgbinder glib-2.0
 ifeq ($(USE_SYSTEMD),1)
