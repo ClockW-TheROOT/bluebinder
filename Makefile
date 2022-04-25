@@ -14,8 +14,8 @@ bluebinder: bluebinder.c
 	$(CC) $(CFLAGS) -Wall -flto $^ `pkg-config --cflags --libs $(DEPEND_LIBS)` -DUSE_SYSTEMD=$(USE_SYSTEMD) -o $@
 
 install:
-	mkdir -p $(DESTDIR)/usr/sbin
-	cp bluebinder $(DESTDIR)/usr/sbin
+	
+	cp bluebinder $(BIN)
 
 clean:
 	rm bluebinder
